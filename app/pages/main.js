@@ -10,7 +10,7 @@ import NavigatorBar from 'react-native-navbar';
 import commonStyles from '../styles/common';
 import {logout} from '../actions/user';
 
-class Main extends Component {
+class MainPage extends Component {
   constructor(props){
       super(props);
   }
@@ -93,4 +93,4 @@ function select(store){
       user: store.userStore.user,
   }
 }
-export default connect(select)(Main);
+export default connect(select)(MainPage);
