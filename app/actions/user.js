@@ -30,3 +30,13 @@ export function login(opt) {
       });
   }
 }
+
+// skip login
+export function skipLogin() {
+  return ({type: TYPES.LOGGED_IN, user: skipUser});
+}
+
+// logout
+export function logout() {
+  return ({type: TYPES.LOGGED_OUT});
+}
